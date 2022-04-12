@@ -1,5 +1,7 @@
 - configuracoes iniciais:
 	* baixar tomcat quando não usar o do xampp
+	* ter jboss instalado
+	*ter jps instalado
 	I. new > other > project dynamic web;
 	II. New Runtime;
 	III. pasta Apache >  apache tomcat na versão que tem instalado no xampp;
@@ -8,4 +10,35 @@
 
 - as pastas DAO e control sao criadas dentro de src > main > java;
 
-- a pasta view é criada em ...
+----------- MODELO MVC
+- CONTROL - SERVLET: recebe todos os dados referentes a html
+- VIEW - JSP: cria pastas dinamicas pra html
+	HTML, CSS e JS
+- MODEL - persistencia e entidade/classe
+
+
+- para configurar naveador que se quer utilizar para abrir a visualização
+do html, basta clicar em window > web browser > escolher navegador
+
+- para visualizar em um navegador, basta 
+clicar com botão direito sob o codigo > open with > web browser
+
+- fluxo:
+	I. o arquivo .html tem um botão que, ao ser clicado, envia informações do
+	html para o servlet (servidor);
+	II. no servlet o .html será lido/interpretado;
+	III. html/dados são enviados para outro lugar, que pode ser outra pagina de html
+	OBS.: para receber os resultados do servlet, o ideal é criar um arquivo .jsp
+	que é um arquivo dinamico. o html é estático
+	
+- servlet é criado na pasta CONTROL. ele é uma classe que herda propriedades 
+	de HttpServlet
+
+- o request pega informações de name e value das tags html
+
+- em "action" é preciso apontar para o servlet para onde serão enviados os dados html
+	e também é preciso explicitar o metodo que será utilizado 
+	exemplo: <form action="SvExemplo01" method="get">
+
+
+
