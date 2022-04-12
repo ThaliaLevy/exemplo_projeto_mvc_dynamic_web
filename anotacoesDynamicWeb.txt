@@ -1,0 +1,11 @@
+- configuracoes iniciais:
+	* baixar tomcat
+	I. new > other > project dynamic web;
+	II. New Runtime;
+	III. pasta Apache >  apache tomcat na versão que tem instalado no xampp;
+	pra verificar, só ir nas configurações do xampp;
+	IV. Next > Browse > selecionar caminho do tomcat.
+
+- as pastas DAO e control sao criadas dentro de src > main > java;
+
+- a pasta view é criada em ...
