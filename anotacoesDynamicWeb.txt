@@ -1,5 +1,5 @@
 - configuracoes iniciais:
-	* baixar tomcat
+	* baixar tomcat quando não usar o do xampp
 	I. new > other > project dynamic web;
 	II. New Runtime;
 	III. pasta Apache >  apache tomcat na versão que tem instalado no xampp;
