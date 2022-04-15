@@ -72,4 +72,6 @@ Obs.: na primeira vez aparecerão umas opções de preenchimento a respeito
 do servidor que será utilizado. sempre devemos ir em Apache > selecionar a versão
 do TomCast que está sendo utilizada
 
-- 
+- usar o doGet somente enquanto estiver programando, para verificar o que estamos
+fazendo. o ideal para deixar no projeto é o doPost, que não mostra os parametros e
+demais informações que estão sendo enviadas para o servidor.
