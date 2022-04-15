@@ -34,11 +34,17 @@ clicar com botão direito sob o codigo > open with > web browser
 - servlet é criado na pasta CONTROL. ele é uma classe que herda propriedades 
 	de HttpServlet
 
-- o request pega informações de name e value das tags html
+- o request pega informações de name e value das tags html, por isso é IMPORTANTE
+	ter ambos definidos nas tags
 
 - em "action" é preciso apontar para o servlet para onde serão enviados os dados html
 	e também é preciso explicitar o metodo que será utilizado 
 	exemplo: <form action="SvExemplo01" method="get">
 
+- metodos doGet e doPost são ativados quando são chamados por get ou post;
 
+- response é a variável que contem informações do destinatário e remetente; 
 
+- request é a variável que  contem o conteúdo dos dados;
+
+- 

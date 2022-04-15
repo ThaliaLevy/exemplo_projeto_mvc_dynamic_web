@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 public class SvExemplo01 extends HttpServlet {	
 	//request e response são variáveis
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//no request coloca-se
+		
 }
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
