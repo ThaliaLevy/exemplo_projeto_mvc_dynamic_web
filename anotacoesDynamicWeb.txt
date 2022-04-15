@@ -50,6 +50,8 @@ clicar com botão direito sob o codigo > open with > web browser
 - caso o retorno do request seja null, pode ser que o parametro não exista ou o "name" 
 	esteja escrito errado. ou seja, o retorno do request não dá erro!
 
+- parametro: não pode ser alterado. para isso existe o attribute
+
 - pode-se acrescentar informações (atributos) no request. para isso, basta utilizar
 	exemplo: request.setAttribute("nomeAtributo", nomeVariavel);
 	
@@ -60,3 +62,14 @@ clicar com botão direito sob o codigo > open with > web browser
 - para formato mais genérico:     <% %>
 - para formato com retorno:       <%= %>
 - para formato com importação:    <%@ %>
+
+- pelo método doGet, as informações recebidas no request são explicitadas na
+url. ex.: http://localhost:8080/Projeto_MVC/SvExemplo01?nomeCadastrado=Thalia&nota1=7&nota2=8
+
+- para fazer o projeto rodar no localhost, basta clicar com o botão direito
+sob o arquivo de inicialização (geralmente o index) > Run as > Run on server
+Obs.: na primeira vez aparecerão umas opções de preenchimento a respeito
+do servidor que será utilizado. sempre devemos ir em Apache > selecionar a versão
+do TomCast que está sendo utilizada
+
+- 

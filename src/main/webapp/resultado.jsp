@@ -8,11 +8,11 @@
 </head>
 <body>
 <h1>Resultado do cálculo da média do aluno</h1><hr>
-<p>Nome do aluno: </p>
-<p>1ª nota: </p>
-<p>2ª nota: </p>
-<p>3ª nota: </p>
-<p>4ª nota: </p>
-<p>Média: </p>
+<p>Nome do aluno: <%= request.getParameter("nomeCadastrado") %></p>
+<p>1ª nota: <%= request.getParameter("nota1") %></p>
+<p>2ª nota: <%= request.getParameter("nota2") %></p>
+<p>3ª nota: <%= request.getParameter("nota3") %></p>
+<p>4ª nota: <%= request.getParameter("nota4") %></p>
+<p>Média: <%= request.getAttribute("media") %></p>
 </body>
 </html>
