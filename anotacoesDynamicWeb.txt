@@ -52,3 +52,11 @@ clicar com botão direito sob o codigo > open with > web browser
 
 - pode-se acrescentar informações (atributos) no request. para isso, basta utilizar
 	exemplo: request.setAttribute("nomeAtributo", nomeVariavel);
+	
+- o .jsp é a junção do java com html em um arquvio. ele é dinâmico, por isso é mais
+	indicado para se utilizar como arquivo para retorno das requisições do servlet;
+	
+------- FORMAS DE USAR JAVA DENTRO DO .JSP
+- para formato mais genérico:     <% %>
+- para formato com retorno:       <%= %>
+- para formato com importação:    <%@ %>
