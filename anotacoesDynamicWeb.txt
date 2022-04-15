@@ -1,7 +1,7 @@
 - configuracoes iniciais:
 	* baixar tomcat quando não usar o do xampp
 	* ter jboss instalado
-	*ter jps instalado
+	*ter jsp instalado
 	I. new > other > project dynamic web;
 	II. New Runtime;
 	III. pasta Apache >  apache tomcat na versão que tem instalado no xampp;
