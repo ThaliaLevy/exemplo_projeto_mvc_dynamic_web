@@ -43,8 +43,12 @@ clicar com botão direito sob o codigo > open with > web browser
 
 - metodos doGet e doPost são ativados quando são chamados por get ou post;
 
-- response é a variável que contem informações do destinatário e remetente; 
+- response é a variável (de uma classe) que contem informações do destinatário e remetente; 
 
-- request é a variável que  contem o conteúdo dos dados;
+- request é a variável (de uma classe) que  contem o conteúdo dos dados;
 
-- 
+- caso o retorno do request seja null, pode ser que o parametro não exista ou o "name" 
+	esteja escrito errado. ou seja, o retorno do request não dá erro!
+
+- pode-se acrescentar informações (atributos) no request. para isso, basta utilizar
+	exemplo: request.setAttribute("nomeAtributo", nomeVariavel);
