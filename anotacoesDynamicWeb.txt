@@ -83,5 +83,6 @@ demais informações que estão sendo enviadas para o servidor.
 	caminho: projeto > src > main > webapp > web-inf > lib
 	OBS.: após colocar lá, deve-se fazer o build path apontando para esse caminho
 	
-	
+- recomendação do prof.: nome de servlet ser com um padrão. 
+	exe: SvCarroCadastrar - "sv" + nomeClasse + nomeMetodo
 

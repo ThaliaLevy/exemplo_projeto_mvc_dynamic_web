@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 //localização do meu servlet > não se deve alterar!
 @WebServlet("/SvExemplo01")
 
-public class SvExemplo01 extends HttpServlet {	
+public class SvCarroCadastrar extends HttpServlet {	
 	//request e response são variáveis
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//pegar informações que serão usadas, vindas do arquivo .html de entrada 
