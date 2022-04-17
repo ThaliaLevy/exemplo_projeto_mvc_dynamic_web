@@ -1,3 +1,4 @@
+
 - configuracoes iniciais:
 	* baixar tomcat quando não usar o do xampp
 	* ter jboss instalado
