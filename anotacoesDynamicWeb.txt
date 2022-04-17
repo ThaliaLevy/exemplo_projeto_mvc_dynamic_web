@@ -75,3 +75,12 @@ do TomCast que está sendo utilizada
 - usar o doGet somente enquanto estiver programando, para verificar o que estamos
 fazendo. o ideal para deixar no projeto é o doPost, que não mostra os parametros e
 demais informações que estão sendo enviadas para o servidor.
+
+- JBoss > possui variedade de ferramentas para web
+
+- o driver do banco de dados SEMPRE deve estar dentro da pasta "lib".
+	caminho: projeto > src > main > webapp > web-inf > lib
+	OBS.: após colocar lá, deve-se fazer o build path apontando para esse caminho
+	
+	
+
