@@ -6,7 +6,7 @@
 </head>
 <body>
 	<header>
-		<h1>Preencha: </h1>
+<h1>Cadastro de Carro</h1><hr>
 	</header>
 	<main>
 	<!-- apontar action para onde os dados serão enviados -->
@@ -15,19 +15,17 @@
 	<form action="SvExemplo01" method="get">
 	lê o doPost e NÃO exibe os parametros enviados ao servidor > aconselhavel
 	-->
-	<form action="SvExemplo01" method="post">
+	<form action="SvCarroCadastrar" method="post">
 	<label>Nome: </label>
-	<input type="text" name="nomeCadastrado"><br>
-	<label>Nota 1: </label>
-	<input type="text" name="nota1"><br>
-	<label>Nota 2: </label>
-	<input type="text" name=nota2><br>
-	<label>Nota 3: </label>
-	<input type="text" name="nota3"><br>
-	<label>Nota 4: </label>
-	<input type="text" name="nota4"><br>
+	<input type="text" name="nome"><br>
+	<label>Placa: </label>
+	<input type="text" name="placa"><br>
+	<label>Marca: </label>
+	<input type="text" name=marca><br>
+	<label>Ano: </label>
+	<input type="text" name="ano"><br>
 	<br>
-	<input type="submit" value="Calcular"/>
+	<input type="submit" value="Cadastrar"/>
 	</form>
 	</main>
 	<footer> </footer>

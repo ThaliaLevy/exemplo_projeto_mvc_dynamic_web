@@ -7,31 +7,38 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//localização do meu servlet > não se deve alterar!
-@WebServlet("/SvExemplo01")
+import model.entidade.Carro;
 
-public class SvCarroCadastrar extends HttpServlet {	
-	//request e response são variáveis
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//pegar informações que serão usadas, vindas do arquivo .html de entrada 
-		String nomeRecebido = request.getParameter("nomeCadastrado");
-		int nota1 = Integer.parseInt(request.getParameter("nota1"));
-		int nota2 = Integer.parseInt(request.getParameter("nota2"));
-		int nota3 = Integer.parseInt(request.getParameter("nota3"));
-		int nota4 = Integer.parseInt(request.getParameter("nota4"));
-		
-		//realizar o desenvolvimento da regra de negócio
-		double media = (nota1 + nota2 + nota3 + nota4)/4;
-		
-		//setar atributo criado
-		request.setAttribute("media", media);
-		
-		//enviar os resultados ao arquivo .jsp dinâmico
-		request.getRequestDispatcher("resultado.jsp").forward(request, response);
-}
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+//localização do meu servlet > não se deve alterar!
+@WebServlet("/SvCarroCadastrar")
+
+public class SvCarroCadastrar extends HttpServlet {
+	// request e response são variáveis
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// pegar informações que serão usadas, vindas do arquivo .html de entrada
+		String nome = request.getParameter("nome");
+		String marca = request.getParameter("marca");
+		String placa = request.getParameter("placa");
+		int ano = Integer.parseInt(request.getParameter("ano"));
+
+		// chamar entidade que será responsável pela regra de negócio
+		Carro c = new Carro(nome, placa, marca, ano);
+
+		if (c.tratarDados() == true) {
+			// enviar os resultados ao arquivo .jsp dinâmico
+			request.getRequestDispatcher("resultado.jsp").forward(request, response);
+		} else {
+
+			String mensagemErro = "Erro ao cadastrar.";
+			// para setar atributos criados
+			request.setAttribute("mensagemErro", mensagemErro);
+			request.getRequestDispatcher("telaErro.jsp").forward(request, response);
+		}
 	}
 
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		doGet(request, response);
+	}
 }
