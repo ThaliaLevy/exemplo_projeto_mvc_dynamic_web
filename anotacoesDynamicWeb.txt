@@ -86,3 +86,8 @@ demais informações que estão sendo enviadas para o servidor.
 - recomendação do prof.: nome de servlet ser com um padrão. 
 	exe: SvCarroCadastrar - "sv" + nomeClasse + nomeMetodo
 
+- "action" e "method" são métodos de form e devem ser utilizados quando tudo o que estiver 
+dentro do formulário for enviado ao mesmo servlet. no caso de não ser para o mesmo, basta,
+ao invés de colocar os metodos no form, colocar dentro das inputs de type="submit".
+OBS.: os metodos nao serão os mesmos! action = formaction > method = formmethod
+OBS.2: o objetivo é reduzir varias pgs html para apenas 1, contendo todas as ações
