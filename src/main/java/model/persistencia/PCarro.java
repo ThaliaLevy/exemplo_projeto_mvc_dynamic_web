@@ -33,6 +33,21 @@ public class PCarro {
 			cn.ps.setString(3, c.getMarca());
 			cn.ps.setInt(4, c.getAno());
 			cn.ps.execute();
+			
+			 /* contando tamanho da tabela, numero de colunas, etc
+			 
+			Statement stm = cn.conn.createStatement();
+			ResultSet result = stm.executeQuery("SELECT * FROM Cliente");
+			ResultSetMetaData rsmd = result.getMetaData();
+			result.next();
+			
+			int quantidadeColunas = rsmd.getColumnCount();
+			
+			for(int i = 1; i <= quantidadeColunas; i++) {
+				rsmd.getColumnName(1);
+				rsmd.getTableName(1);
+				rsmd.getColumnDisplaySize(1);
+			} */
 
 			cn.conn.close();
 			return true;
