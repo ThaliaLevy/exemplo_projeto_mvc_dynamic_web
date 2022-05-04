@@ -60,7 +60,7 @@ clicar com botão direito sob o codigo > open with > web browser
 	
 ------- FORMAS DE USAR JAVA DENTRO DO .JSP
 - para formato mais genérico:               <% %>
-- para formato com retorno:                 <%= %>
+- para formato com retorno:                 <%= %>   > retorna apenas 1 valor, não retorna varios de uma vez
 - para formato com importação:              <%@ %>
 - para formato com declaração de variavel:  <%! %>
 - para fazer comentários de js:             <%-- %>
@@ -92,3 +92,10 @@ dentro do formulário for enviado ao mesmo servlet. no caso de não ser para o m
 ao invés de colocar os metodos no form, colocar dentro das inputs de type="submit".
 OBS.: os metodos nao serão os mesmos! action = formaction > method = formmethod
 OBS.2: o objetivo é reduzir varias pgs html para apenas 1, contendo todas as ações
+
+- dentro do .jsp dá para usar o metodo "out.println("o que se quer printar")" que tem a função de 
+escrever na tela do html > se usa dentro dos colchetes inclinados
+
+- é possível abrir e fechar os colchetes inclinados para codigo java sem que a logica esteja finalizada.
+por exemplo: <% while(){ %>   <p>oi</p>   <% } %>
+
