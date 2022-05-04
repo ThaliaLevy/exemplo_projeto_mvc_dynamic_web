@@ -59,9 +59,11 @@ clicar com botão direito sob o codigo > open with > web browser
 	indicado para se utilizar como arquivo para retorno das requisições do servlet;
 	
 ------- FORMAS DE USAR JAVA DENTRO DO .JSP
-- para formato mais genérico:     <% %>
-- para formato com retorno:       <%= %>
-- para formato com importação:    <%@ %>
+- para formato mais genérico:               <% %>
+- para formato com retorno:                 <%= %>
+- para formato com importação:              <%@ %>
+- para formato com declaração de variavel:  <%! %>
+- para fazer comentários de js:             <%-- %>
 
 - pelo método doGet, as informações recebidas no request são explicitadas na
 url. ex.: http://localhost:8080/Projeto_MVC/SvExemplo01?nomeCadastrado=Thalia&nota1=7&nota2=8
