@@ -99,3 +99,22 @@ escrever na tela do html > se usa dentro dos colchetes inclinados
 - é possível abrir e fechar os colchetes inclinados para codigo java sem que a logica esteja finalizada.
 por exemplo: <% while(){ %>   <p>oi</p>   <% } %>
 
+- pensando em segurança, não é aconselhável usar a input com hidden para guardar uma informação sobre
+ a página. ao invés disso, usar: request.getSession().setAttribute();
+ 
+- o servidor é capaz de armazenar dados como variaveis (como no caso acima), tempo de sessão, etc, e 
+tudo fica disponivel para uma mesma sessão apenas. o proprio servidor faz essa identificação.
+OBS.: uma sessao é iniciada após a primeira requisição realizada.
+OBS.: não será necessario usar um submit e form
+
+- o ideal é guardar os dados do usuario em um objeto logo após o login - no servidor - e depois
+utilizar outro servlet intermediario para fazer outras ações
+
+- a analise de "se o usuario pode ou não fazer tal ação" deve ser feita no servlet.
+	para cada jsp deve haver um servlet para uma nova validação
+	
+- para redirecionamento por perfil, é bom criar um "tipo de usuario" como atributo enviado no objeto
+
+- para iniciar uma nova sessão deve-se utilizar: request.getSession(true);
+pois se não podem haver resíduos dos dados do ultimo login realizado
+para logoff: request.getSession(false);   > apaga instantaneamente  os dados
