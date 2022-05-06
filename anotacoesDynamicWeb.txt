@@ -118,3 +118,5 @@ utilizar outro servlet intermediario para fazer outras ações
 - para iniciar uma nova sessão deve-se utilizar: request.getSession(true);
 pois se não podem haver resíduos dos dados do ultimo login realizado
 para logoff: request.getSession(false);   > apaga instantaneamente  os dados
+
+- response.sendRedirect("caminho.html") >  direciona para a pagina de login
