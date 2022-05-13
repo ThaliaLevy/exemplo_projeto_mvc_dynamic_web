@@ -1,4 +1,3 @@
-
 - configuracoes iniciais:
 	* baixar tomcat quando não usar o do xampp
 	* ter jboss instalado
@@ -16,7 +15,6 @@
 - VIEW - JSP: cria pastas dinamicas pra html
 	HTML, CSS e JS
 - MODEL - persistencia e entidade/classe
-
 
 - para configurar naveador que se quer utilizar para abrir a visualização
 do html, basta clicar em window > web browser > escolher navegador
